@@ -5,4 +5,9 @@ sky:
     port: 3306
     database: sky_take_out
     username: root
-    password: root
+    password: 15193651772Aa!
+  alioss:
+    endpoint: oss-cn-beijing.aliyuncs.com
+    access-key-id: LTAI5tFsgXkTZ1LqBx4H5NLR
+    access-key-secret: ZhmmmFZkQJOFm8YH3cMZN0DLdNYont
+    bucket-name: leadnews1772
