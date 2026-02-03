@@ -11,6 +11,9 @@ sky:
     access-key-id:
     access-key-secret:
     bucket-name: leadnews1772
+  wechat:
+    appid: wx6e1a75c9a8dc180a
+    secret: 2b7d75d8316b016d1381771b3480c3da
   redis:
     host: localhost
     port: 6379
