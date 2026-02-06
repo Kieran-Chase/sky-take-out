@@ -8,7 +8,7 @@ sky:
     password: 15193651772Aa!
   alioss:
     endpoint: oss-cn-beijing.aliyuncs.com
-    access-key-id: 
+    access-key-id:
     access-key-secret:
     bucket-name: leadnews1772
   wechat:
