@@ -71,7 +71,7 @@ public interface DishMapper {
      * 根据id动态修改菜品数据
      * @param dish
      */
-    @AutoFill(value= OperationType.INSERT)
+    @AutoFill(value= OperationType.UPDATE)
     void update(Dish dish);
 
     /**

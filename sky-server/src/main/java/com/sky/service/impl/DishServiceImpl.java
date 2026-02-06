@@ -177,4 +177,17 @@ public class DishServiceImpl implements DishService {
 
         return dishVOList;
     }
+
+    /**
+     * 根据分类id查询菜品
+     * @param categoryId
+     * @return
+     */
+    public List<Dish> list(Long categoryId) {
+        Dish dish = Dish.builder()
+                .categoryId(categoryId)
+                .status(StatusConstant.ENABLE) // 关键：只查询起售中的菜品
+                .build();
+        return dishMapper.list(dish);
+    }
 }

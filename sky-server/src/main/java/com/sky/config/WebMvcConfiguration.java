@@ -47,7 +47,11 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
         registry.addInterceptor(jwtTokenUserInterceptor)
                 .addPathPatterns("/user/**")
                 .excludePathPatterns("/user/user/login")
-                .excludePathPatterns("/user/shop/status");
+                .excludePathPatterns("/user/shop/status")
+                // 追加以下放行路径，确保用户不登录也能浏览商品
+                .excludePathPatterns("/user/category/list")
+                .excludePathPatterns("/user/dish/list")
+                .excludePathPatterns("/user/setmeal/list");
     }
 
     /**
